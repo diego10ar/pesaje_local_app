@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pesaje_local_app">
    <application
-        android:label="pesaje_local_app"
+        android:label="Historial Peso"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

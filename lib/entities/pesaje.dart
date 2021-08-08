@@ -1,58 +1,47 @@
-import 'package:pesaje_local_app/adapters/database.dart';
+import '../adapters/database.dart';
 
+class Pesaje {
+  String id = (new DateTime.now().millisecondsSinceEpoch).toString();
+  String peso="";
+  String grasa="";
+  String musculo="";
+  String agua="";
+  String osea="";
+  String fecha="";
+  String hora="";
 
-class Pesaje{
-  String idbbdd;
-  String id =(new DateTime.now().millisecondsSinceEpoch).toString();
-  String peso;
-  String grasa;
-  String musculo;
-  String agua;
-  String osea;
-  String fecha;
-  String hora;
+  Pesaje(
+      this.id,
+      this.peso,
+      this.grasa,
+      this.musculo,
+      this.agua,
+      this.osea,
+      this.fecha,
+      this.hora);
 
-  Pesaje(this.idbbdd,this.id,this.peso,this.grasa,this.musculo,this.agua,this.osea,this.fecha,this.hora);
-
-  Map<String, dynamic> toJson() {
-    return {
-      'id': id,
-      'peso': peso,
-      'grasa':grasa,
-      'musculo': musculo,
-      'agua': agua,
-      'osea': osea,
-      'fecha': fecha,
-      'hora':hora,
-
+  Map<String, dynamic> toMap() {
+    var map = <String, dynamic>{
+      ManejadorBd.COLUMN_ID: id,
+      ManejadorBd.COLUMN_PESO: peso,
+      ManejadorBd.COLUMN_GRASA: grasa,
+      ManejadorBd.COLUMN_MUSCULO: musculo,
+      ManejadorBd.COLUMN_AGUA: agua,
+      ManejadorBd.COLUMN_OSEA: osea,
+      ManejadorBd.COLUMN_FECHA: fecha,
+      ManejadorBd.COLUMN_HORA: hora
     };
+    return map;
   }
-}
 
-Pesaje crearPesaje(record, String idbase) {
-  Map<String, dynamic> attributes = {
-    'id':'',
-    'peso': '',
-    'grasa': '',
-    'musculo': '',
-      'agua': '',
-      'osea': '',
-      'fecha': '',
-      'hora':'',
-
-  };
-  record.forEach((key, value) => {attributes[key] = value});
-   
-  Pesaje dispositivo =  Pesaje(
-      idbase,
-      attributes['id'],
-      attributes['peso'],
-      attributes['grasa'],
-      attributes['musculo'],
-      attributes['agua'],
-      attributes['osea'],
-      attributes['fecha'],
-      attributes['hora'],
-      );
-  return dispositivo;
+  Pesaje.fromMap(Map<String, dynamic> map) {
+    id = map[ManejadorBd.COLUMN_ID];
+    peso = map[ManejadorBd.COLUMN_PESO];
+    grasa = map[ManejadorBd.COLUMN_GRASA];
+    musculo = map[ManejadorBd.COLUMN_MUSCULO];
+    agua = map[ManejadorBd.COLUMN_AGUA];
+    osea = map[ManejadorBd.COLUMN_OSEA];
+    fecha = map[ManejadorBd.COLUMN_FECHA];
+    hora = map[ManejadorBd.COLUMN_HORA];
+  }
 }

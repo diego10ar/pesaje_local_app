@@ -319,8 +319,9 @@ if (mal) {
       _fecha=_formatDateTime(DateTime.now());
       _hora=_formatDateTime2(DateTime.now());
   print(_hora);
-      Pesaje pesaje=new Pesaje("cambiara", todo, _peso, _grasa, _musculo, _agua, _osea, _fecha,_hora);
+      Pesaje pesaje=new Pesaje( todo, _peso, _grasa, _musculo, _agua, _osea, _fecha,_hora);
        //borrar cuando bien
+       ManejadorBd.instance.insertPesaje(pesaje);
       // addPesaje(pesaje);
      
       //borar cuando bien

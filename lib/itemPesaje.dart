@@ -16,8 +16,9 @@ class ItemPesaje extends StatelessWidget {
 
  
     return  Padding(
-        padding: EdgeInsets.all(2),
+        padding: EdgeInsets.only(right:2,left:2,top:5,bottom: 5),
         child: Container(
+          
           height: 145,
           decoration: BoxDecoration(
               border: Border.all(color: Color.fromRGBO(159, 37, 37, 1)),

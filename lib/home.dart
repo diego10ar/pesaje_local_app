@@ -24,7 +24,13 @@ class _HomeState extends State<Home> {
   }
 
   void obtenerPesajes() {
-   
+      ManejadorBd.instance.getPesajes().then(
+          (filas){
+              setState(() {
+                listaPesajes=filas;
+              });
+          }
+        );
   }
 
   @override
@@ -434,8 +440,8 @@ class _HomeState extends State<Home> {
            
                     Center(
                       child: Padding(
-                          padding: EdgeInsets.only(top: 100, bottom: 20, right: 15, left:15),
-                          child: Text("No hay datos. \n\n Pulsa en añadir para crear uno nuevo",
+                          padding: EdgeInsets.only(top: 100, bottom: 60, right: 15, left:15),
+                          child: Text("NO HAY DATOS \n\n Pulsa en añadir tu primer pesaje",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   letterSpacing: 2,

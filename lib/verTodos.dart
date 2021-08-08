@@ -21,7 +21,13 @@ class _verTodosState extends State<VerTodos> {
     obtenerPesajes();
   }
   void obtenerPesajes(){
-
+   ManejadorBd.instance.getPesajes().then(
+          (filas){
+              setState(() {
+                listaPesajes=filas;
+              });
+          }
+        );
   }
   @override
   Widget build(BuildContext context) {

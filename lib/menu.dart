@@ -38,9 +38,9 @@ class _MenuState extends State<Menu> {
     return ListView(children: <Widget>[
       Center(
         child: Padding(
-            padding: EdgeInsets.only(top: 20),
+            padding: EdgeInsets.only(top: 20,bottom: 60),
             child: Text(
-              "DIEGO",
+              "MENÚ",
               style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
@@ -75,7 +75,7 @@ class _MenuState extends State<Menu> {
         centerTitle: true,
         title: const Padding(
           padding: EdgeInsets.only(top: 7),
-          child: Text('Pesajes Diego',
+          child: Text('Estadísticas',
               textAlign: TextAlign.center,
               style: TextStyle(
                   letterSpacing: 1.2,
