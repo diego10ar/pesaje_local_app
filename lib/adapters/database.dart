@@ -74,7 +74,7 @@ class ManejadorBd{
           List<Pesaje> listaPesajes = [];
           pesajes.forEach((currentpesaje) {
             Pesaje pesaje = Pesaje.fromMap(currentpesaje);
-            listaPesajes.add(pesaje);
+            listaPesajes.insert(0,pesaje);
           });
       
           return listaPesajes;

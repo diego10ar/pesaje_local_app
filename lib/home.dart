@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     if (listaPesajes.length > 1) {
-     
+     int tam=listaPesajes.length;
       Pesaje _pUltimo = listaPesajes[0];
       Pesaje _pAnterior = listaPesajes[1];
     diferenciaDias(_pAnterior.id, _pUltimo.id);

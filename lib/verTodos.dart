@@ -16,6 +16,7 @@ class VerTodos extends StatefulWidget{
 class _verTodosState extends State<VerTodos> {
 
   List<Pesaje>listaPesajes=[];
+  
   @override
   void initState() {
     obtenerPesajes();
@@ -28,7 +29,9 @@ class _verTodosState extends State<VerTodos> {
               });
           }
         );
+        
   }
+  
   @override
   Widget build(BuildContext context) {
 
@@ -122,6 +125,10 @@ else{
                           padding: EdgeInsets.only(left: 10, right: 10),
                           child: 
                             ListView.builder(
+                          shrinkWrap: true,
+            
+            
+                
                               itemCount: listaPesajes.length,
                               // itemBuilder: (context, int item) => new Text("${lista[item].fecha} ${lista[item].hora} ${lista[item].tipohora.toString().substring(lista[item].tipohora.toString().indexOf('.') + 1)}"))
                               itemBuilder: (context, int item) =>
