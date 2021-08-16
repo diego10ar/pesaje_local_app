@@ -17,47 +17,47 @@ El objetivo que se pretende conseguir guardando estas mediciones es de poder vis
 Lo primero que veremos nada más ingresar en la aplicación será la pantalla de Home vacía y el menú al que solo se puede acceder **deslizando desde el borde izquierdo hacia el centro.** Al pulsar sobre *Ver Todos* nos saldrá la tercera imagen que tiene como título *Historial* que tampoco tiene datos.
 
 <p align="center">
-<img  src="capturas/captura1.jpg" width="300" alt="Primera pantalla sin datos">
+<img  src="capturas/captura1.png" width="300" alt="Primera pantalla sin datos">
   <span> &nbsp;&nbsp;&nbsp; </span>
-  <img  src="capturas/captura2.jpg" width="300" alt="Visualización del menú">
+  <img  src="capturas/captura2.png" width="300" alt="Visualización del menú">
    <span>&nbsp;&nbsp;&nbsp; </span>
-  <img  src="capturas/captura3.jpg" width="300" alt="Visualización del menú">
+  <img  src="capturas/captura3.png" width="300" alt="Visualización del menú">
 </p>
 
 
 Si pulsamos en el botón de añadir nos aparecerá la pantalla en la que tenemos que escribir los datos que nos proporcione nuestra báscula y pulsar añadir. **ATENCIÓN: Es obligatorio que todos los datos sean introducidos, de no ser así la aplicación no deja continuar.**
 
 <p align="center">
-<img  src="capturas/captura10.jpg" width="300" alt="Pantalla añadir superior">
+<img  src="capturas/captura10.png" width="300" alt="Pantalla añadir superior">
   <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
-  <img  src="capturas/captura4.jpg" width="300" alt="Pantalla añadir inferior">
+  <img  src="capturas/captura4.png" width="300" alt="Pantalla añadir inferior">
 </p>
 
 Una vez añadido cambiará nuestra pantalla de Home, ya que ya si tenemos valores.
 
 <p align="center">
-<img  src="capturas/captura11.jpg" width="300" alt="Primer pesaje">
+<img  src="capturas/captura11.png" width="300" alt="Primer pesaje">
 </p>
 
 La pantalla anterior nos mostraba información del último pesaje, si a la semana volvemos a meternos en la aplicación nos aparecerá un mensaje como el de la siguiente imagen:
 
 <p align="center">
-<img  src="capturas/captura5.jpg" width="300" alt="Primer pesaje">
+<img  src="capturas/captura5.png" width="300" alt="Primer pesaje">
 </p>
 
 La pantalla donde se guardan todos los registros ("Historial") también se irá actualizando según introduzcamos valores. Aparecerán ordenados de manera inversa a la temporal apareciendo así en las primeras posiciones los últimos valores introducidos.
 <p align="center">
-<img  src="capturas/captura5.jpg" width="300" alt="Primer pesaje en Historial">
+<img  src="capturas/captura5.png" width="300" alt="Primer pesaje en Historial">
 </p>
 
 Si añadimos un segundo registro, el Home nos cambiara y nos ofrecerá la diferencia entre los dos últimos pesajes, indicando también el tiempo que ha pasado entre la medición de esos dos valores. En el historial también se irán añadiendo en el orden descrito anteriormente. Los cambios obtenidos entre las dos mediciones considerados positivos se marcarán en verde y los negativos en rojo.
 
 <p align="center">
-<img  src="capturas/captura7.jpg" width="300" alt="Home con dos valores">
+<img  src="capturas/captura7.png" width="300" alt="Home con dos valores">
   <span> &nbsp;&nbsp; </span>
- <img  src="capturas/captura9.jpg" width="300" alt="Home con dos valores y negativos">
+ <img  src="capturas/captura9.png" width="300" alt="Home con dos valores y negativos">
    <span> &nbsp;&nbsp; </span>
-   <img  src="capturas/captura8.jpg" width="300" alt="Historial con 2 valores">
+   <img  src="capturas/captura8.png" width="300" alt="Historial con 2 valores">
 </p>
 
 <p align="center">
